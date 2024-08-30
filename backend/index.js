@@ -58,6 +58,7 @@ app.get("/", async (req, res) => {
   return res.send(result);
 });
 app.get("/:id", async (req, res) => {
+  console.log("aditya 1 :", req.params)
   const id = req.params.id;
   const result = await Emp.findById(id);
   return res.send(result);

@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Registration />} />
             <Route exact path="/showall" element={<Showall />} />
-            <Route exact path="/view" element={<View />} />
+            <Route exact path="/view/:id" element={<View />} />
           </Routes>
         </BrowserRouter>
 
